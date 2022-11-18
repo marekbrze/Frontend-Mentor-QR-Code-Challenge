@@ -1,7 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit&display=swap");
 
+:root {
+  --blue: #2c7dfa;
+  --blue-shade: #3685ff;
+  --dark-navy: #1f314f;
+  --gray: #7d889e;
+  --light-gray: #d5e1ef;
+}
+
 body {
-  background-color: #d5e1ef;
+  background-color: var(--light-gray);
   margin: 0;
   padding: 0;
 }
@@ -31,7 +39,7 @@ body {
 .qrCodeArea {
   width: 288px;
   height: 288px;
-  background: #3685ff;
+  background: var(--blue);
   border-radius: 10px;
   position: relative;
   overflow: hidden;
@@ -48,7 +56,7 @@ h1 {
   font-size: 22px;
   line-height: 28px;
   text-align: center;
-  color: #1f314f;
+  color: var(--dark-navy);
 }
 
 p {
@@ -58,13 +66,13 @@ p {
   line-height: 19px;
   text-align: center;
   letter-spacing: 0.1875px;
-  color: #7d889e;
+  color: var(--gray);
 }
 
 .circle {
   position: absolute;
   border-radius: 100%;
-  background-color: #2c7dfa;
+  background-color: var(--blue-shade);
   z-index: 1;
 }
 
