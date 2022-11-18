@@ -14,14 +14,10 @@ body {
   padding: 0;
 }
 
-.attribution {
-  font-size: 11px;
-  text-align: center;
-  position: absolute;
-  bottom: 0px;
-}
-.attribution a {
-  color: hsl(228, 45%, 44%);
+.wrapper {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
 }
 
 .card {
@@ -36,14 +32,49 @@ body {
   flex-direction: column;
 }
 
+/* QR Code */
+
 .qrCodeArea {
-  width: 288px;
-  height: 288px;
+  max-width: 288px;
+  aspect-ratio: 1/1;
   background: var(--blue);
   border-radius: 10px;
   position: relative;
   overflow: hidden;
 }
+
+.qrCode {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 2;
+}
+
+.circle {
+  position: absolute;
+  border-radius: 100%;
+  background-color: var(--blue-shade);
+  z-index: 1;
+}
+
+.circleTop {
+  width: 328px;
+  height: 328px;
+  left: -140px;
+  top: -164px;
+}
+
+.circleBottom {
+  width: 270px;
+  height: 270px;
+  left: 140px;
+  top: 164px;
+}
+
+/* Typography */
 
 h1,
 p {
@@ -68,34 +99,21 @@ p {
   letter-spacing: 0.1875px;
   color: var(--gray);
 }
-
-.circle {
-  position: absolute;
-  border-radius: 100%;
-  background-color: var(--blue-shade);
-  z-index: 1;
+.cardContent {
+  padding: 0px 8px;
 }
 
-.circleTop {
-  width: 328px;
-  height: 328px;
-  left: -140px;
-  top: -164px;
-}
+/* Attribution */
 
-.circleBottom {
-  width: 270px;
-  height: 270px;
-  left: 140px;
-  top: 164px;
-}
-
-.qrCode {
-  position: absolute;
+.attribution {
+  font-family: "Outfit";
   left: 0;
   right: 0;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-  z-index: 2;
+  font-size: 11px;
+  text-align: center;
+  position: absolute;
+  bottom: 8px;
+}
+.attribution a {
+  color: var(--blue);
 }
