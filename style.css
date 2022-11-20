@@ -21,13 +21,13 @@ body {
 }
 
 .card {
-  max-width: 320px;
+  max-width: 20rem;
   box-sizing: border-box;
   margin: auto;
   background-color: #fff;
-  box-shadow: 0px 25px 25px rgba(0, 0, 0, 0.0476518);
-  border-radius: 20px;
-  padding: 16px;
+  box-shadow: 0rem 1.5625rem 1.5625rem rgba(0, 0, 0, 0.0476518);
+  border-radius: 1.25rem;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
 }
@@ -35,7 +35,7 @@ body {
 /* QR Code */
 
 .qrCodeArea {
-  max-width: 288px;
+  max-width: 18rem;
   aspect-ratio: 1/1;
   background: var(--blue);
   border-radius: 10px;
@@ -61,17 +61,17 @@ body {
 }
 
 .circleTop {
-  width: 328px;
-  height: 328px;
-  left: -140px;
-  top: -164px;
+  width: 20.5rem;
+  height: 20.5rem;
+  left: -8.75rem;
+  top: -10.25rem;
 }
 
 .circleBottom {
-  width: 270px;
-  height: 270px;
-  left: 140px;
-  top: 164px;
+  width: 16.875rem;
+  height: 16.875rem;
+  left: 8.75rem;
+  top: 10.25rem;
 }
 
 /* Typography */
@@ -84,8 +84,8 @@ p {
 h1 {
   font-style: normal;
   font-weight: 700;
-  font-size: 22px;
-  line-height: 28px;
+  font-size: 1.375rem;
+  line-height: 1.75rem;
   text-align: center;
   color: var(--dark-navy);
 }
@@ -93,14 +93,14 @@ h1 {
 p {
   font-style: normal;
   font-weight: 400;
-  font-size: 15px;
-  line-height: 19px;
+  font-size: 0.9375rem;
+  line-height: 1.1875rem;
   text-align: center;
-  letter-spacing: 0.1875px;
+  letter-spacing: 0.0117rem;
   color: var(--gray);
 }
 .cardContent {
-  padding: 0px 8px;
+  padding: 0rem 0.5rem;
 }
 
 /* Attribution */
@@ -109,10 +109,10 @@ p {
   font-family: "Outfit";
   left: 0;
   right: 0;
-  font-size: 11px;
+  font-size: 0.6875rem;
   text-align: center;
   position: absolute;
-  bottom: 8px;
+  bottom: 0.5rem;
 }
 .attribution a {
   color: var(--blue);
